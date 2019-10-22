@@ -158,6 +158,11 @@ export default class Root extends React.Component {
        <form onSubmit={e => e.preventDefault()} className="ui form"></form>
        <button onClick={()=>this.isHost(true)}>Host</button>  
        <button onClick={()=>this.isHost(false)}>Join</button>
+       <div>
+         <ul>
+           {this.state.rooms.map(i=> (<li>{i.key} </li>))}
+         </ul>
+       </div>
        </div>
        )}
        {this.state.host === true && (
