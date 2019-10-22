@@ -38,7 +38,7 @@ io.on('connection', function (client) {
   })
 })
 
-server.listen('http://igluapp.com.s3-website.us-east-2.amazonaws.com/', function (err) {
+server.listen(3000, function (err) {
   if (err) throw err
-  console.log('listening on port')
+  console.log('listening on port 3000')
 })
